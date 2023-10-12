@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./Cell.css";
 import { CellValue } from "../models/CellValue";
 
