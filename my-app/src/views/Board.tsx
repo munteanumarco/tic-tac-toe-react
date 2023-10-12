@@ -114,7 +114,7 @@ const Board = () => {
     let count = 0;
     for (let i = 0; i < size; i++) {
       for (let j = 0; j < size; j++) {
-        if (currentCells[i][j] == CellValue.EmptyCell) {
+        if (currentCells[i][j] === CellValue.EmptyCell) {
           count++;
         }
       }
@@ -144,7 +144,7 @@ const Board = () => {
       let message = `Player ${player} won !`;
       setIsGameLocked(true);
       alert(message);
-    } else if (emptyCells() == 0) {
+    } else if (emptyCells() === 0) {
       setIsGameLocked(true);
       alert("Draw !");
     }
